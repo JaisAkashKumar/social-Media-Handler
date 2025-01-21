@@ -10,7 +10,9 @@ const App = () => {
   // Fetch user submissions from the backend
   const fetchSubmissions = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/submissions");
+      const response = await axios.get(
+        "https://akash-social-media.vercel.app/api/submissions"
+      );
       setSubmissions(response.data); // Set submissions in state
     } catch (error) {
       console.error("Error fetching submissions:", error);
