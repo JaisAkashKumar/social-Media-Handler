@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json()); // Handle large JSON payloads
-app.use(bodyParser.urlencoded());
+// app.use(bodyParser.urlencoded());
 app.use(cors());
 
 // MongoDB Connection
