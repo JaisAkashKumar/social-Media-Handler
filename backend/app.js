@@ -9,8 +9,8 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(bodyParser.json({ limit: "30mb", extended: true })); // Handle large JSON payloads
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+app.use(bodyParser.json()); // Handle large JSON payloads
+app.use(bodyParser.urlencoded());
 app.use(cors());
 
 // MongoDB Connection
